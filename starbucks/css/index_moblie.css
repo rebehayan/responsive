@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+html { font-size:16px;}
+body { font-size:1rem;}
+
+header { border:none;}
+header > div h1 { padding: .8125rem 0 .75rem .625rem;}
+header h1 img { width:2.8125rem;}
+header > div nav { display:none;}
+header > div .spot { right:4.5rem; top:1rem;}
+header > div .spot i { display:inline-block; font-size:2.5rem;}
+header .total { display:inline-block; position: absolute; right: .75rem; top:1rem;font-size:2.5rem;}
+header > div .spot li a { padding:0;}
+header > div .spot li ~ li { padding-left: 1.6875rem;}
+header > div .spot li ~ li a:after { display: none;}
+header > div .spot li:nth-child(2),
+header > div .spot li:nth-child(3),
+header > div .spot li:nth-child(5) { display:none;}
+header .total span,
+header > div .spot li span { position:absolute; left:-40000%;}

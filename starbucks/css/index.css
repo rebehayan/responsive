@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+html { font-size: 20px;}
+body { font-size: 1rem;}
+
+header { background: #f6f5ef; border-top:2px solid #000;}
+header > div { position: relative; width: 54.5rem; margin: 0 auto;}
+header > div:after { content: ""; display: block; clear: both;}
+header > div h1 { float: left; padding: 1.1rem 0 1.2rem;}
+header > div nav { float: right; padding: 3.4rem 0 0 0;}
+header > div nav > ul > li { float: left;}
+header > div nav > ul > li > a { display: block; padding: .75rem 1.25rem 0; height: 2.6rem; font-size: .7rem; color:#333; line-height: 100%;}
+header > div .spot { position: absolute; right:2.25rem; top: 1rem;}
+header > div .spot li { float: left; position: relative;}
+header > div .spot li a { padding:0 .75rem; font-size: .7rem; color:#333; line-height: 100%;}
+header > div .spot li ~ li a:after { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height:.6rem; background: #e5e5e5; transform: translateY(-25%);}
+header > div .spot li:last-child a:after { display: none;}
+header > div .spot li:last-child a { display: block; padding: 0;width: 1.7rem; height: 1.7rem; background: #fff; border:1px solid #ccc; text-align: center; line-height: 1.7rem; font-size: 0; color:transparent; border-radius: .25rem;}
+header > div .spot li:last-child a:before { content:"\e97a"; font-family: 'xeicon'; font-size: 1.2rem; color:#000;}
+header > div .spot i { display:none;}
+header .total { display:none;}
+
+
+.rewards { background:linear-gradient(to right, #272727, #272727 30%, #d6c798 30%, #d6c798);}
+.rewards > div { position:relative; width: 54.5rem; margin: 0 auto;}
+.rewards > div:after { content:""; display:block; clear:both;}
+.rewards h2 { display:table; position:absolute; width:16rem; height:13rem;  background:url(../images/bg_star.png) no-repeat right top;}
+.rewards h2 span { display:table-cell; vertical-align:middle;}
+.rewards .info { padding:2.5rem 0 0 17rem; height:13rem; background:url(../images/bg_dot.png) no-repeat left bottom #d6c798; box-sizing:border-box;}
+.rewards .info span { display:block;  padding:0 0 .6rem; font-size:1.15rem; color:#333; line-height:100%; letter-spacing:-1px;}
+.rewards .info p { font-size:.7rem; color:#666; line-height:1rem; letter-spacing:-0.5px;} 
+.rewards .left { float:left;}
+.rewards .right { float:right;}
+.rewards .btm { clear:both; padding:1.7rem 0 0;}
+.rewards .btm .btn { width:12.75rem;}
+.rewards .top_btn { padding:1.7rem 0 0;}
+.rewards .top_btn a:first-child { margin-right:.25rem;}
+
+/* ¹öÆ° */
+.btn { display:inline-block; min-width:6.25rem; height:1.9rem; border:2px solid #222; border-radius:3px; text-align:center; line-height:1.7rem; font-size:.7rem; color:#222; box-sizing:border-box; }
+.btn.type1 { background:#222; color:#fff;}
+
+
+
+
+
+
+/**/

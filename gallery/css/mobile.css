@@ -1,0 +1,9 @@
+@charset "utf-8";
+body { padding: 0 5px;}
+.gallery { width: 100%;}
+.gallery > li { float: none; padding: 0 0 20px 0; width: 100%; box-sizing: border-box;}
+.gallery > li img { width: 100%;}
+.gallery > li:nth-child(2n) { padding-right: 0;}
+.gallery li ul { padding: 29px 8px 0; height: 110px;}
+.gallery li ul li { padding: 0 0 8px 10px; background: url("../images/bu_square.png") no-repeat 0 3px / 4px auto; font-size: 12px;}
+.gallery li a span { right: 13px; bottom:15px;}
