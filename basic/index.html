@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>반응형웹</title>
+</head>
+<body>
+<style>
+	* { padding: 0; margin: 0;}
+	li { list-style: none;}
+		/* PC버전 */
+	.wrap { width: 1000px; margin: 0 auto;}
+	.visual { height: 100px; background: purple;} 
+	.left { float: left; width: 50%; height: 100px; background: skyblue;}
+	.right { float: left; width: 50%; height: 100px; background: orange;}
+		
+	@media ( min-width:701px) and ( max-width:900px){ /* 노트북  */
+		
+		body { padding:0 20px;}
+		.wrap { width: 100%; margin:auto;}
+		
+	}
+
+	@media ( min-width:501px) and ( max-width:700px){  /* 타블렛PC */
+		
+		.wrap { width: 100%; margin:auto;}
+		.left,
+		.right { height: 200px;}
+
+	}
+	
+	
+	@media ( min-width:0px) and ( max-width:500px){  /* 모바일 */
+		
+		.wrap { width: 100%; margin:auto;}
+		.visual { height: 300px;} 
+		.left { float:none; width: 100%; height:300px;}
+		.right { float: none; width: 100%; height: 300px;}
+
+	}
+	
+
+
+	
+</style>
+	
+	<div class="wrap">
+		<div class="visual"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+

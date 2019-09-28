@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>반응형웹</title>
+</head>
+<body>
+<style>
+	* { padding: 0; margin: 0;}
+	li { list-style: none;}
+	body { padding: 50px;}
+	table.type1 { border-spacing: 0; border-collapse: collapse; width: 100%;}
+	table.type1 th, table.type1 td {text-align: center;}
+	table.type1 th { background: #000; color:#fff;}
+	table.type1 tr { border: 1px solid #000; }
+	table.type1 tr:nth-child(odd) { background:#ccc;}
+	table.type1 td span { display: none;}
+
+	table.type2 { border-spacing: 0; border-collapse: collapse; width: 100%;}
+	table.type2 th, table.type2 td {text-align: center;}
+	table.type2 th { background: #000; color:#fff;}
+	table.type2 tr { border: 1px solid #000; }
+	table.type2 tr:nth-child(odd) { background:#ccc;}
+	table.type2 td span { display: none;}
+
+	table.type3 { margin: 0 0 30px; border-spacing: 0; border-collapse: collapse; width: 100%;}
+	table.type3 th { background: #000; color:#fff;}
+	table.type3 th, 
+	table.type3 td { border: 1px solid #000;  }
+
+	@media (max-width:600px){ 
+
+		
+		table.type1 colgroup,
+		table.type1 thead { display: none;}
+		table.type1 td { display: block; text-align: left;}
+		table.type1 td:first-child,
+		table.type1 td:last-child { display: table-cell; width:80px; border: 1px solid #000;  text-align: center;}
+		table.type1 td span { padding: 0 0 0 10px; display: inline-block; width: 60px;}
+
+		.ova { width: 100%; overflow: auto;}
+		.ova table { width: 800px;}
+		
+		table.type3 colgroup { display: none;}
+		table.type3 th,
+		table.type3 td { margin-top: -1px; display: block; float: left; box-sizing: border-box;}
+		table.type3 th { width: 40%;}
+		table.type3 td { width: 60%;}
+		
+		/*	
+		table.type1 td:before { padding: 0 0 0 10px; display: inline-block; width: 60px;}
+	
+		table.type1 td:nth-child(2):before { content:"이름";}
+		table.type1 td:nth-child(3):before { content:"나이";}
+		table.type1 td:nth-child(4):before { content:"출생지";}
+*/
+	}
+	
+</style>
+
+	<table class="type3">
+	<colgroup>
+	<col style="width:100px;">
+	<col style="width:25%;">
+	<col style="width:100px;">
+	<col style="width:px;">
+	</colgroup>
+	<tbody>
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+		<th>성별</th>
+		<td>남</td>
+	</tr>
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+		<th>성별</th>
+		<td>남</td>
+	</tr>
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+		<th>성별</th>
+		<td>남</td>
+	</tr>
+	</tbody>
+	</table>
+	
+	
+	
+	
+	<table class="type1">
+	<colgroup>
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	</colgroup>
+	<thead>
+	<tr>
+		<th>선택</th>
+		<th>이름</th>
+		<th>나이</th>
+		<th>출생지</th>
+		<th>상세보기</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td><span>이름</span>아무개</td>
+		<td><span>나이</span>20세</td>
+		<td><span>출생지</span>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	</tbody>
+	</table>
+	
+	
+	
+<div class="ova">
+	<table class="type2">
+	<colgroup>
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	<col style="width:20%;">	
+	</colgroup>
+	<thead>
+	<tr>
+		<th>선택</th>
+		<th>이름</th>
+		<th>나이</th>
+		<th>출생지</th>
+		<th>상세보기</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td><span>이름</span>아무개</td>
+		<td><span>나이</span>20세</td>
+		<td><span>출생지</span>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>아무개</td>
+		<td>20세</td>
+		<td>서울</td>
+		<td><a href="#a">보기</a></td>
+	</tr>
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left,
+.right {position: absolute;  top: 0; width: 100px; height: 300px;}
+.left { left: 0; background:skyblue;}
+.right { right: 0; background:violet;}
+.visual { height: 300px; background: #8DEB9D;}
